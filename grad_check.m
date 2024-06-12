@@ -41,3 +41,6 @@ end
 
 % Construct log-log plot with the computed data
 loglog(h./2.^(1:N),norm_diff);
+xlabel(["Step size $h$"], "Interpreter","latex")
+ylabel("$\|g_k - \frac{\mathcal{J}(\pi_h, \mu_{1,h}) - \mathcal{J}(\pi_k, \mu_{1,k})}{h}\|$", "Interpreter","latex", "FontSize", 14)
+title("Error of gradient vs. finite difference quotient")
